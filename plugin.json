@@ -1,0 +1,11 @@
+﻿{
+  "Group": "Misc",
+  "FriendlyName": "MMS NOP Admin",
+  "SystemName": "Misc.MmsAdmin",
+  "Version": "2.0",
+  "SupportedVersions": [ "4.30" ],
+  "Author": "William Roy",
+  "DisplayOrder": 1,
+  "FileName": "Nop.Plugin.Misc.MmsAdmin.dll",
+  "Description": "This plugin allows to configure and manage MMS products"
+}

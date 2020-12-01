@@ -1,0 +1,108 @@
+﻿@model Nop.Plugin.Misc.MmsAdmin.Models.ConfigurationsModel
+@{
+    Layout = "_ConfigurePlugin";
+}
+
+<form asp-controller="PickupInStore2" asp-action="Configure" method="post">
+    <div class="panel-group">
+        <div class="panel panel-default">
+            <div class="panel-body">
+                <div class="form-group">
+                    <div class="col-md-3">
+                        <nop-label asp-for="DollarExchangeRate" />
+                    </div>
+                    <div class="col-md-9">
+                        <nop-editor asp-for="DollarExchangeRate" />
+                        <span asp-validation-for="DollarExchangeRate"></span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-3">
+                        <nop-label asp-for="ShippingMultiplyer" />
+                    </div>
+                    <div class="col-md-9">
+                        <nop-editor asp-for="ShippingMultiplyer" />
+                        <span asp-validation-for="ShippingMultiplyer"></span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-3">
+                        <nop-label asp-for="MarkupMultiplyerLower" />
+                    </div>
+                    <div class="col-md-9">
+                        <nop-editor asp-for="MarkupMultiplyerLower" />
+                        <span asp-validation-for="MarkupMultiplyerLower"></span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-3">
+                        <nop-label asp-for="MarkupMultiplyerUpper" />
+                    </div>
+                    <div class="col-md-9">
+                        <nop-editor asp-for="MarkupMultiplyerUpper" />
+                        <span asp-validation-for="MarkupMultiplyerUpper"></span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-3">
+                        <nop-label asp-for="MarkupMutiplyerThreshold" />
+                    </div>
+                    <div class="col-md-9">
+                        <nop-editor asp-for="MarkupMutiplyerThreshold" />
+                        <span asp-validation-for="MarkupMutiplyerThreshold"></span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-3">
+                        <nop-label asp-for="LoadFromDate" />
+                    </div>
+                    <div class="col-md-9">
+                        <nop-editor asp-for="LoadFromDate" />
+                        <span asp-validation-for="LoadFromDate"></span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-3">
+                        <nop-label asp-for="LoadUntilDate" />
+                    </div>
+                    <div class="col-md-9">
+                        <nop-editor asp-for="LoadUntilDate" />
+                        <span asp-validation-for="LoadUntilDate"></span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-3">
+                        <nop-label asp-for="LastLoadedDate" />
+                    </div>
+                    <div class="col-md-9">
+                        <nop-editor asp-for="LastLoadedDate" />
+                        <span asp-validation-for="LastLoadedDate"></span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-3">
+                        <nop-label asp-for="MMSusername" />
+                    </div>
+                    <div class="col-md-9">
+                        <nop-editor asp-for="MMSusername" />
+                        <span asp-validation-for="MMSusername"></span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-3">
+                        <nop-label asp-for="MMSpassword" />
+                    </div>
+                    <div class="col-md-9">
+                        <nop-editor asp-for="MMSpassword" />
+                        <span asp-validation-for="MMSpassword"></span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-9 col-md-offset-3">
+                        <input type="submit" name="save" class="btn bg-blue" value="@T("Admin.Common.Save")" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
